@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter  } from '@angular/core';
+import { Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-user',
@@ -6,8 +6,9 @@ import { Component, Input, Output, EventEmitter  } from '@angular/core';
   styleUrls: ['./user.component.scss'],
 })
 export class UserComponent {
-  @Output() removeUser = new EventEmitter();
-  @Input() name = '';
-  @Input() status = '';
-  @Input() avatar = '';
+  @Input() name = ''
+  @Input() status = ''
+  @Input() url = ''
+  isOnline = true
+
 }

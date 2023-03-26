@@ -3,13 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
-import { AddUserComponent } from './add-user/add-user.component';
+import { SortPipe } from './pipes/sort.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
-    AddUserComponent
+    SortPipe,
   ],
   imports: [
     BrowserModule
